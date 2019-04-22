@@ -1,0 +1,30 @@
+form {
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    .todo-item {
+      width: 320px;
+      padding: 10px;
+      margin-bottom: 20px;
+      height: 50px;
+      background-color: #e3e3e3;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      input {
+        width: 10%;
+      }
+      .item-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+      }
+      .del {
+        width: 10%;
+      }
+    }
+  }
+}

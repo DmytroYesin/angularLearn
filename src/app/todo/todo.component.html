@@ -1,0 +1,16 @@
+<p>
+  List of Todos
+</p>
+
+<form>
+  <input type="text" [(ngModel)]="inputed" name="first"><button (click)="addTodo()">Add</button>
+  <div class="todo-list">
+    <div class="todo-item" *ngFor="let todo of todos">
+      <input type="checkbox" id={{todo.id}} (click)="checkTodo(todo.id)" ngChecked="todo.flag">
+      <div class="item-text">
+        <label>{{todo.descr}}</label>
+      </div>
+      <button class="del" (click)="deletTodo(todo.id)">X</button>
+    </div>
+  </div>
+</form>
